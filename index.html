@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script type="text/javascript" src="rps.js"></script>
+    <h1>Rock, Paper, Scissors</h1>
+    <section class = "game">
+        <div class = "round"> Round 1</div>
+        <div class = "selection">
+            <div id = "player">
+                <img id = playerIMG src = "images/question.png">
+                Player
+            </div>
+            vs
+            <div id = "comp">
+                <img id = compIMG src = "images/question.png">
+                Computer
+            </div>
+        </div>
+        <div class = "result">
+            <p id = "result"> Choose Your Weapon! </p>
+        </div>
+        <div class = "buttons">
+            <div id = "rock">
+                <div class = "text">
+                    <h2>Rock</h2>
+                    <p>Beats: Scissors</p>
+                </div>
+                <img id = "rockIMG" src = "images/rock.png">
+            </div>
+            <div id = "paper">
+                <div class = "text">
+                    <h2>Paper</h2>
+                    <p>Beats: Rock</p>
+                </div>
+                <img src = "images/paper.png">
+            </div>
+            <div id = "scissors">
+                <div class = "text">
+                    <h2>Scissors</h2>
+                    <p>Beats: Paper</p>
+                </div>
+                <img src = "images/scissors.png">
+            </div>
+
+        </div>
+
+        <div class = "scoreboard">
+            <div class = "score">
+                <p id = "playerChild">Player Score: </p>
+                <p id = "playerScore">0</h2>
+            </div>
+            <div class = "score">
+                <p id = "compChild">Computer Score: </p>
+                <p id = compScore>0</p>
+            </div>
+        </div>
+        <button class = "reset">Reset Game</button>
+    <div id = "endModal" class = "modal">
+        <div class = "content"> 
+            <button id="close">Play Again</button>
+            <p id = "modalMsg">Game Over!</p>
+        </div>
+    </div>
+    </section>
+    <script src="rps.js" defer></script>
 </body>
 </html>
